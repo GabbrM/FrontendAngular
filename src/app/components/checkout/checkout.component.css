@@ -1,0 +1,30 @@
+.common-form{
+  text-align: center;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  width: 300px;
+}
+
+.checkout h1{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.checkout h3{
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.form-button{
+  height: 35px;
+  border: 1px solid blueviolet;
+  cursor: pointer;
+}
+
+.p-message{
+  color: green;
+  text-align: center;
+}

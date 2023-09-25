@@ -1,0 +1,223 @@
+{
+  "admin": [
+    {
+      "name": "hola",
+      "surname": "hola",
+      "email": "hola@gmail.com",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "name": "tony",
+      "surname": "chopper",
+      "email": "tony@gmail.com",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "name": "peter",
+      "surname": "peter",
+      "email": "pepito@gmail.com",
+      "password": "p",
+      "id": 3
+    },
+    {
+      "name": "yu",
+      "surname": "yu",
+      "email": "yu",
+      "password": "yu",
+      "id": 4
+    },
+    {
+      "name": "holabebe",
+      "surname": "hola",
+      "email": "hola@gmail.com",
+      "password": "o",
+      "id": 5
+    },
+    {
+      "name": "hol",
+      "surname": "h",
+      "email": "h",
+      "password": "h23456",
+      "id": 6
+    },
+    {
+      "name": "go",
+      "surname": "gol",
+      "email": "hola@gmail.com",
+      "password": "lgd",
+      "id": 7
+    },
+    {
+      "name": "michelle",
+      "surname": "moreno",
+      "email": "g@gmail.com",
+      "password": "23456",
+      "id": 8
+    },
+    {
+      "name": "alena",
+      "surname": "a",
+      "email": "alena@gmail.com",
+      "password": "123445",
+      "id": 9
+    },
+    {
+      "name": "go",
+      "surname": "gol",
+      "email": "godo",
+      "password": "god",
+      "id": 10
+    },
+    {
+      "name": "ghjk",
+      "surname": "ghjk",
+      "email": "bnm,",
+      "password": "vbnm",
+      "id": 11
+    },
+    {
+      "name": "u",
+      "surname": "u",
+      "email": "u",
+      "password": "u",
+      "id": 12
+    },
+    {
+      "name": "mugi",
+      "surname": "moreno",
+      "email": "u202110543@upc.edu.pe",
+      "password": "1234567890",
+      "id": 13
+    },
+    {
+      "name": "mugi",
+      "surname": "moreno",
+      "email": "u202110543@upc.edu.pe",
+      "password": "1234567890",
+      "id": 14
+    },
+    {
+      "name": "u",
+      "surname": "u",
+      "email": "u",
+      "password": "u",
+      "id": 15
+    },
+    {
+      "name": "ghjk",
+      "surname": "hjk",
+      "email": "ghjkl",
+      "password": "hjklñ{",
+      "id": 16
+    },
+    {
+      "name": "mugi",
+      "surname": "moreno",
+      "email": "u202110543@upc.edu.pe",
+      "password": "1234567",
+      "id": 17
+    },
+    {
+      "name": "hola",
+      "surname": "gho",
+      "email": "hola@gmail.com",
+      "password": "grgg",
+      "id": 18
+    },
+    {
+      "name": "anita",
+      "surname": "an",
+      "email": "we",
+      "password": "123",
+      "id": 19
+    }
+  ],
+  "products": [
+    {
+      "name": "tomioka",
+      "price": "110",
+      "color": "azul",
+      "category": "Figuras",
+      "description": "figura coleccionable",
+      "image": "https://www.rightstufanime.com/images/productImages/4534530885555_figure-giyu-tomioka-demon-slayer-kimetsu-no-yaiba-figure-primary.jpg?resizeid=3&resizeh=600&resizew=600",
+      "id": 1
+    },
+    {
+      "name": "Luffy - Figure",
+      "price": "150",
+      "color": "black",
+      "category": "Figuras",
+      "description": "Figura coleccionable",
+      "image": "https://tamashiinations.fr/15516-large_default/one-piece-figure-monkeydluffy-imagination-works.jpg",
+      "id": 2
+    },
+    {
+      "name": "inuyasha - Figure",
+      "price": "1000",
+      "color": "rojo",
+      "category": "Figuras",
+      "description": "Figura coleccionable",
+      "image": "https://m.media-amazon.com/images/I/51+F1JEmchL._AC_UF894,1000_QL80_.jpg",
+      "id": 3
+    },
+    {
+      "name": "Xiao Er",
+      "price": "200",
+      "color": "green",
+      "category": "Figuras",
+      "description": "Coleccionable",
+      "image": "https://ueeshop.ly200-cdn.com/u_file/UPAL/UPAL688/2304/products/19/30d102f97c.jpg.500x500.jpg",
+      "id": 4
+    }
+  ],
+  "users": [
+    {
+      "name": "l",
+      "surname": "Li",
+      "email": "li@gmail.com",
+      "password": "l",
+      "id": 1
+    },
+    {
+      "name": "l",
+      "surname": "Li",
+      "email": "li@gmail.com",
+      "password": "l",
+      "id": 2
+    },
+    {
+      "name": "l",
+      "surname": "Li",
+      "email": "li@gmail.com",
+      "password": "l",
+      "id": 3
+    },
+    {
+      "name": "michelle",
+      "surname": "moreno",
+      "email": "g@gmail.com",
+      "password": "123",
+      "id": 4
+    },
+    {
+      "name": "Gabriel",
+      "surname": "Bernal",
+      "email": "gabrielbernal_12@hotmail.com",
+      "password": "123456",
+      "id": 5
+    }
+  ],
+  "cart": [],
+  "orders": [
+    {
+      "email": "u20201f415@upc.edu.pe",
+      "address": "sfaas",
+      "contact": "nohay",
+      "totalPrice": 300,
+      "userId": 4,
+      "id": 1
+    }
+  ]
+}

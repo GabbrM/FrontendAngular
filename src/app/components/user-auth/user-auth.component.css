@@ -1,0 +1,51 @@
+.form-input{
+  height: 35px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border: 1px solid blueviolet;
+  color: blueviolet;
+}
+
+.common-form{
+  text-align: center;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  width: 300px;
+}
+
+.form-button{
+  height: 35px;
+  border: 1px solid blueviolet;
+  cursor: pointer;
+}
+
+.user-auth h1{
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 80px;
+  color: blueviolet;
+}
+
+.user-auth{
+  margin-bottom: 100px;
+}
+
+.common-form a{
+  color: blueviolet;
+  cursor: pointer;
+}
+
+.invalid-input{
+  color: red;
+  font-size: 12px;
+  margin-top: -20px;
+}
+
+button:disabled{
+  cursor: not-allowed;
+}
+
+.error-p{
+  color: red;
+}
