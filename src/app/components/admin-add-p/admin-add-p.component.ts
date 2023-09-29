@@ -3,11 +3,11 @@ import {ProductService} from "../../services/product.service";
 import {product} from "../../models/data-model";
 
 @Component({
-  selector: 'app-admin-add-product',
-  templateUrl: './admin-add-product.component.html',
-  styleUrls: ['./admin-add-product.component.css']
+  selector: 'app-admin-add-p',
+  templateUrl: './admin-add-p.component.html',
+  styleUrls: ['./admin-add-p.component.css']
 })
-export class AdminAddProductComponent {
+export class AdminAddPComponent {
 
   addProductMessage: string | undefined;
   constructor(private product: ProductService) {

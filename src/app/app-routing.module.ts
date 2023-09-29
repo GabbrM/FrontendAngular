@@ -4,7 +4,7 @@ import {HomeComponent} from "./components/home/home.component";
 import {AdminAuthComponent} from "./components/admin-auth/admin-auth.component";
 import {AdminHomeComponent} from "./components/admin-home/admin-home.component";
 import {AuthGuard} from "./auth.guard";
-import {AdminAddProductComponent} from "./components/admin-add-product/admin-add-product.component";
+import {AdminAddPComponent} from "./components/admin-add-p/admin-add-p.component";
 import {AdminUpdateProductComponent} from "./components/admin-update-product/admin-update-product.component";
 import {SearchComponent} from "./components/search/search.component";
 import {ProductDetailsComponent} from "./components/product-details/product-details.component";
@@ -31,8 +31,8 @@ const routes: Routes = [
     canActivate: [AuthGuard]
   },
   {
-    path:'admin-add-product',
-    component: AdminAddProductComponent,
+    path:'admin-add-p',
+    component: AdminAddPComponent,
     canActivate: [AuthGuard]
   },
   {

@@ -10,7 +10,7 @@ import {HttpClientModule} from "@angular/common/http";
 import { AdminHomeComponent } from './components/admin-home/admin-home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from "@angular/material/button";
-import { AdminAddProductComponent } from './components/admin-add-product/admin-add-product.component';
+import { AdminAddPComponent } from './components/admin-add-p/admin-add-p.component';
 import {MatTableModule} from "@angular/material/table";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AdminUpdateProductComponent } from './components/admin-update-product/admin-update-product.component';
@@ -36,7 +36,7 @@ import { SuccessfulBuyingComponent } from './components/successful-buying/succes
     HomeComponent,
     AdminAuthComponent,
     AdminHomeComponent,
-    AdminAddProductComponent,
+    AdminAddPComponent,
     AdminUpdateProductComponent,
     SearchComponent,
     ProductDetailsComponent,
