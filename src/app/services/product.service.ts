@@ -1,57 +1,73 @@
-import {EventEmitter, Injectable} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
-import {cart, order, product} from "../models/data-model";
+import { EventEmitter, Injectable } from '@angular/core';
+import { HttpClient, HttpHeaders } from "@angular/common/http";
+import { cart, order, product } from "../models/data-model";
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
   cartData = new EventEmitter<product[] | []>();
+
+  // Define las cabeceras con la cabecera 'ngrok-skip-browser-warning'
+  private ngrokHeaders = new HttpHeaders({
+    'ngrok-skip-browser-warning': '1'
+  });
+
   constructor(private http: HttpClient) { }
 
+  private addNgrokHeaders(options?: any): any {
+    // Agrega las cabeceras a las opciones de solicitud (si se proporcionan)
+    if (options) {
+      options.headers = this.ngrokHeaders;
+    } else {
+      // Si no se proporcionan opciones, crea un objeto con las cabeceras
+      options = { headers: this.ngrokHeaders };
+    }
+    return options;
+  }
+
   getPopularAnimeProducts() {
-    return this.http.get<product[]>('http://a06c-38-25-16-199.ngrok-free.app/products?_limit=10&category=Anime');
+    return this.http.get<product[]>('http://a06c-38-25-16-199.ngrok-free.app/products?_limit=10&category=Anime', this.addNgrokHeaders());
   }
 
-  // Obtener productos populares de la categoría KPOP
   getPopularKpopProducts(){
-    return this.http.get<product[]>('http://a06c-38-25-16-199.ngrok-free.app/products?_limit=10&category=KPOP');
+    return this.http.get<product[]>('http://a06c-38-25-16-199.ngrok-free.app/products?_limit=10&category=KPOP', this.addNgrokHeaders());
   }
 
-  // Obtener productos populares de la categoría Lectura
   getPopularLecturaProducts(){
-    return this.http.get<product[]>('http://a06c-38-25-16-199.ngrok-free.app/products?_limit=10&category=Lectura');
+    return this.http.get<product[]>('http://a06c-38-25-16-199.ngrok-free.app/products?_limit=10&category=Lectura', this.addNgrokHeaders());
   }
+
   addProduct(data:product){
-    return this.http.post('http://a06c-38-25-16-199.ngrok-free.app/products',data);
+    return this.http.post('http://a06c-38-25-16-199.ngrok-free.app/products', data, this.addNgrokHeaders());
   }
 
   productList(){
-    return this.http.get<product[]>('http://a06c-38-25-16-199.ngrok-free.app/products');
+    return this.http.get<product[]>('http://a06c-38-25-16-199.ngrok-free.app/products', this.addNgrokHeaders());
   }
 
   deleteProduct(id: number){
-    return this.http.delete(`http://a06c-38-25-16-199.ngrok-free.app/products/${id}`);
+    return this.http.delete(`http://a06c-38-25-16-199.ngrok-free.app/products/${id}`, this.addNgrokHeaders());
   }
 
   getProduct(id: string){
-      return this.http.get<product>(`http://a06c-38-25-16-199.ngrok-free.app/products/${id}`);
+    return this.http.get<product>(`http://a06c-38-25-16-199.ngrok-free.app/products/${id}`, this.addNgrokHeaders());
   }
 
   updateProduct(product: product){
-    return this.http.put<product>(`http://a06c-38-25-16-199.ngrok-free.app/products/${product.id}`, product);
+    return this.http.put<product>(`http://a06c-38-25-16-199.ngrok-free.app/products/${product.id}`, product, this.addNgrokHeaders());
   }
 
   popularProducts(){
-    return this.http.get<product[]>('http://a06c-38-25-16-199.ngrok-free.app/products?_limit=6');
+    return this.http.get<product[]>('http://a06c-38-25-16-199.ngrok-free.app/products?_limit=6', this.addNgrokHeaders());
   }
 
   trendyProducts(){
-    return this.http.get<product[]>('http://a06c-38-25-16-199.ngrok-free.app/products?_limit=6');
+    return this.http.get<product[]>('http://a06c-38-25-16-199.ngrok-free.app/products?_limit=6', this.addNgrokHeaders());
   }
 
   searchProducts(query: string){
-      return this.http.get<product[]>(`http://a06c-38-25-16-199.ngrok-free.app/products?q=${query}`);
+    return this.http.get<product[]>(`http://a06c-38-25-16-199.ngrok-free.app/products?q=${query}`, this.addNgrokHeaders());
   }
 
   localAddToCart(data: product){
