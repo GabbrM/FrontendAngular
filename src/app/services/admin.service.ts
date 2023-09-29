@@ -14,7 +14,7 @@ export class AdminService {
 
   userSignUp(data: SignUp): void{
     this.http
-      .post('http://localhost:3000/admin',
+      .post('http://a06c-38-25-16-199.ngrok-free.app/admin',
       data,
       {observe: 'response'}
     ).subscribe((result) => {
@@ -33,7 +33,7 @@ export class AdminService {
 
   userLogin(data: login){
     console.warn(data);
-    this.http.get(`http://localhost:3000/admin?email=${data.email}&password=${data.password}`,
+    this.http.get(`http://a06c-38-25-16-199.ngrok-free.app/admin?email=${data.email}&password=${data.password}`,
       {observe: 'response'}
     ).subscribe((result: any) => {
       console.warn(result);

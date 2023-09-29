@@ -122,7 +122,7 @@ export class UserDetailProfileComponent implements AfterViewInit{
 
     localStorage.setItem('shippingData', JSON.stringify(shippingData));
 
-    this.http.put(`http://localhost:3000/shipping/${this.idShipping}`, shippingData)
+    this.http.put(`http://a06c-38-25-16-199.ngrok-free.app/shipping/${this.idShipping}`, shippingData)
       .subscribe(
         () => {
           console.log('Datos de envío guardados correctamente');
@@ -160,7 +160,7 @@ export class UserDetailProfileComponent implements AfterViewInit{
     const confirmDelete = confirm("¿Estás seguro de que deseas eliminar tu cuenta?");
 
     if (confirmDelete) {
-      this.http.delete(`http://localhost:3000/users/${this.userId}`)
+      this.http.delete(`http://a06c-38-25-16-199.ngrok-free.app/users/${this.userId}`)
         .subscribe(
           () => {
             this.router.navigate(['/']);
@@ -189,7 +189,7 @@ export class UserDetailProfileComponent implements AfterViewInit{
 
     localStorage.setItem('user', JSON.stringify(userData));
 
-    this.http.put(`http://localhost:3000/users/${this.userId}`, userData)
+    this.http.put(`http://a06c-38-25-16-199.ngrok-free.app/users/${this.userId}`, userData)
       .subscribe(
         () => {
           console.log('Datos del usuario actualizados correctamente');
