@@ -1,0 +1,186 @@
+<div *ngIf="showEditData" class="user-data">
+  <label (click)="toggleEditData()" class="edit-data">Regresar</label>
+  <div class="profile-container">
+    <div class="header">
+      <div class="profile-image">
+        <img src="https://i.pinimg.com/1200x/76/7e/67/767e674c17f8b705fd8fa5411081513d.jpg" alt="Imagen" class="logo">
+      </div>
+      <h1>Hola, {{userName}}</h1>
+    </div>
+    <div class="profile-content">
+      <div class="profile-box personal-info">
+        <h3 class="fw-bold fs-5 mb-3">Información Personal
+          <button class="buttonStyle" (click)="editUserData()">
+            <fa-icon [icon]="iconEdit"></fa-icon>
+          </button>
+        </h3>
+        <div class="field">
+          <label>Nombre: <input type="text" [(ngModel)]="userName" [readonly]="!editUserFields"
+                                class="custom-input"></label>
+        </div>
+        <div class="field">
+          <label>Apellido: <input type="text" [(ngModel)]="userSurname" [readonly]="!editUserFields"
+                                  class="custom-input"></label>
+        </div>
+        <div class="field">
+          <label>Teléfono: +51 <input type="text" [(ngModel)]="userNumberCellphone" [readonly]="!editUserFields"
+                                      class="custom-input" (input)="validatePhoneNumber()"></label>
+        </div>
+        <div class="field">
+          <label>Correo: <input type="email" [(ngModel)]="userEmail" [readonly]="!editUserFields" class="custom-input"></label>
+        </div>
+        <div class="field">
+          <label>Contraseña: <input type="password" [(ngModel)]="userPassword" [readonly]="!editUserFields"
+                                    class="custom-input"></label>
+        </div>
+        <div class="field-button">
+          <button (click)="saveUserData()" [disabled]="disableInputsUser">Actualizar</button>
+        </div>
+      </div>
+      <div class="profile-box address-info">
+        <h3 class="fw-bold fs-5 mb-3">Dirección de envío
+          <button class="buttonStyle" (click)="edit()">
+            <fa-icon [icon]="iconEdit"></fa-icon>
+          </button>
+        </h3>
+        <div class="field">
+          <label>Dirección: <input type="text" [(ngModel)]="savedAddress" name="addressInput" id="addressInput"
+                                   [readonly]="!editMode" [disabled]="disableInputs"></label>
+        </div>
+        <div class="field">
+          <label>Distrito: <input type="text" [(ngModel)]="savedDistrict" name="districtInput" id="districtInput"
+                                  [readonly]="!editMode" [disabled]="disableInputs"></label>
+        </div>
+        <div class="field">
+          <label>Provincia: <input type="text" [(ngModel)]="savedProvince" name="provinceInput" id="provinceInput"
+                                   [readonly]="!editMode" [disabled]="disableInputs"></label>
+        </div>
+        <div class="field">
+          <label>Método de Pago: <input type="text" [(ngModel)]="savedPaymentMethod" name="paymentMethodInput"
+                                        id="paymentMethodInput" [readonly]="!editMode"
+                                        [disabled]="disableInputs"></label>
+        </div>
+        <div class="field">
+          <label>Tarjeta vinculada: <input type="text" [(ngModel)]="savedLinkedCard" name="linkedCardInput"
+                                           id="linkedCardInput" [readonly]="!editMode"
+                                           [disabled]="disableInputs"></label>
+        </div>
+        <div class="field-button">
+          <button (click)="saveShippingData()" [disabled]="disableInputs">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Esta es la que da por defecto-->
+<div *ngIf="!showEditData" class="user-data">
+  <label (click)="toggleEditData()" class="edit-data">Editar Datos
+    <fa-icon class="iconEdition" [icon]="iconEdit"></fa-icon>
+  </label>
+  <div class="profile-container">
+    <div class="header">
+      <div class="profile-image">
+        <img src="https://i.pinimg.com/1200x/76/7e/67/767e674c17f8b705fd8fa5411081513d.jpg" alt="Imagen" class="logo">
+      </div>
+      <h1>Hola, {{userName}}</h1>
+    </div>
+    <div class="box">
+      <div class="profile-box personal-info">
+        <h3 class="fw-bold fs-5 mb-3">Información Personal</h3>
+        <div class="field">
+          <label>Nombre: {{userName}}</label>
+        </div>
+        <div class="field">
+          <label>Apellido: {{userSurname}}</label>
+        </div>
+        <div class="field">
+          <label>Teléfono: +51 {{userNumberCellphone}}</label>
+        </div>
+        <div class="field">
+          <label>Correo: {{userEmail}} </label>
+        </div>
+        <div class="field">
+          <label>Contraseña: {{ hidePassword(userPassword) }} </label>
+        </div>
+      </div>
+      <div class="profile-box address-info">
+        <h3 class="fw-bold fs-5 mb-3">Dirección de envío</h3>
+        <div class="field">
+          <label>Dirección: <input type="text" [(ngModel)]="savedAddress" name="addressInput" id="addressInput2"
+                                   [readonly]="!editMode" [disabled]="disableInputs"></label>
+        </div>
+        <div class="field">
+          <label>Distrito: <input type="text" [(ngModel)]="savedDistrict" name="districtInput" id="districtInput2"
+                                  [readonly]="!editMode" [disabled]="disableInputs"></label>
+        </div>
+        <div class="field">
+          <label>Provincia: <input type="text" [(ngModel)]="savedProvince" name="provinceInput" id="provinceInput2"
+                                   [readonly]="!editMode" [disabled]="disableInputs"></label>
+        </div>
+        <div class="field">
+          <label>Método de Pago: <input type="text" [(ngModel)]="savedPaymentMethod" name="paymentMethodInput"
+                                        id="paymentMethodInput2" [readonly]="!editMode"
+                                        [disabled]="disableInputs"></label>
+        </div>
+        <div class="field">
+          <label>Tarjeta vinculada: <input type="text" [(ngModel)]="savedLinkedCard" name="linkedCardInput"
+                                           id="linkedCardInput2" [readonly]="!editMode"
+                                           [disabled]="disableInputs"></label>
+        </div>
+      </div>
+    </div>
+    <div class="order-recorded">
+      <div class="profile-box order-info">
+        <h3>Mis pedidos:</h3>
+        <div class="my-orders">
+          <h1><a routerLink="/my-orders">My Orders</a></h1>
+          <div class="row">
+            <div class="col-sm-2">
+              <span class="fw-bold">Order</span>
+            </div>
+            <div class="col-sm-2">
+              <span class="fw-bold">Order Id</span>
+            </div>
+            <div class="col-sm-2">
+              <span class="fw-bold">Price</span>
+            </div>
+            <div class="col-sm-2">
+              <span class="fw-bold">Status</span>
+            </div>
+            <div class="col-sm-2">
+              <span class="fw-bold">Cancel Order</span>
+            </div>
+          </div>
+
+          <div class="row order-data" *ngFor="let order of orderData">
+            <div class="col-sm-2">
+              <img class="order-img"
+                   src="https://www.citypng.com/public/uploads/preview/download-hd-shopping-cart-black-logo-icon-png-11640441685ymd041qjws.png?v=2023060403"
+                   alt="Icon Order">
+            </div>
+            <div class="col-sm-2">
+              <span>#{{order.id}}</span>
+            </div>
+            <div class="col-sm-2">
+              <span>{{order.totalPrice}}</span>
+            </div>
+            <div class="col-sm-2">
+              <span>Aduanas</span>
+            </div>
+            <div class="col-sm-2">
+              <span><button class="form-button cancel-button" (click)="cancelOrder(order.id)">Cancelar Orden</button></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div>
+      <button (click)="logout()" class="form-button-close"><p>Cerrar Sesión</p></button>
+      <button (click)="deleteUserData()" class="form-button-close"><p>Eliminar cuenta</p></button>
+    </div>
+  </div>
+</div>
+
+

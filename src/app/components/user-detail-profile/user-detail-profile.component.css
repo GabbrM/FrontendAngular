@@ -1,0 +1,212 @@
+body, h1, h3,p, field, label{
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.box{
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-box {
+  width: 400px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  padding: 20px;
+  margin-bottom: 40px;
+  margin-right: 20px;
+}
+
+
+.profile-box:last-child {
+  margin-right: 0;
+}
+
+.profile-box h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.field {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+input[type="text"] {
+  display: none;
+}
+
+.field input[type="text"] {
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  font-size: 14px;
+  font-family: inherit;
+  color: #000000;
+  font-weight: normal;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+
+.icon-Edit {
+  margin-left: 5px;
+}
+
+
+.icon-Edit:hover{
+  cursor: pointer;
+}
+
+.edit-data {
+  cursor: pointer;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  margin-right: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.custom-input {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px none;
+  padding: 5px;
+  outline: none;
+}
+
+.custom-input:focus {
+  border-bottom: 1px none;
+}
+
+/*order section*/
+.form-button{
+  width: 80px;
+  border: 8px;
+  background-color: #AA1D1D;
+  color: white;
+}
+
+.order-data{
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.order-recorded{
+  margin-bottom: 10px;
+}
+
+.order-info{
+  margin-top: 24px;
+}
+
+.order-info h3{
+  text-align: center;
+}
+
+.order-img{
+  width: 20px;
+}
+
+.my-orders h1 a{
+  color: #AA1D1D;
+  text-decoration: none;
+}
+
+/*Log out section style*/
+.form-button-close{
+  height: 40px;
+  width: 150px;
+  border: none;
+  background-color: #AA1D1D;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-button-close p{
+  padding-top: 1px;
+  margin: 0;
+}
+
+.iconEdition{
+  margin-left: 3px;
+}
+
+.buttonStyle{
+  border: none;
+  background-color: white;
+}
+
+
+@media (max-width: 600px) {
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    flex-direction: column;
+  }
+
+  .profile-box {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .form-button-close{
+    display: flex;
+    flex-direction: column;
+  }
+}

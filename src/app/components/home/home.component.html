@@ -2,36 +2,77 @@
   <ng-template *ngFor="let item of popularProducts" ngbSlide>
     <div class="picsum-img-wrapper">
       <a routerLink="/details/{{item.id}}">
-        <img class="product-header-img" src="{{item.image}}" alt="Random first slide" />
-    </a></div>
+        <img class="product-header-img" src="{{item.image}}" alt="Random first slide"/>
+      </a></div>
     <div class="carousel-caption">
       <h3>{{item.name}}</h3>
-      <p>{{item.description}}</p>
     </div>
   </ng-template>
 </ngb-carousel>
+
+
 <div class="product-list-wrapper">
-  <h1>Trendy Products</h1>
+  <!--          SECCION ANIME       -->
+  <div class="text-center container-section">
+    <h2 class="fw-bold  fs-2">ÚLTIMAS FIGURAS LLEGADAS AL SITIO WEB</h2>
+    <h4 class="fs-5">¡Colecciónalas todas y muéstrales a tus amigos tu adquisición!</h4>
+  </div>
   <div class="row">
-    <div class="col-sm-3" *ngFor="let item of trendyProducts">
-      <div class="product-item">
-        <img src="{{item.image}}" alt="">
-
-        <div class="product-details">
-        <h6 class="name-head">{{item.name}}</h6>
-          <div class="product-price">
-            <h6>Price: {{item.price | currency}}</h6>
+    <div class="col-sm-3" *ngFor="let item of animeProducts">
+      <a [routerLink]="['/details', item.id]" class="product-item">
+        <div class="hover-effect">
+          <div class="img-container"> <!-- Agrega la clase .img-container aquí -->
+            <img class="img" src="{{item.image}}" alt="{{item.name}}">
           </div>
-
-          <div class="product-color">
-            <h6>Color: {{item.color}}</h6>
+          <div class="hover-caption">
+            <h3>{{item.name}}</h3>
           </div>
         </div>
-          <div class="product-footer">
-            <a routerLink="/details/{{item.id}}">View Details</a>
-            <a href="">Add to Cart</a>
+      </a>
+    </div>
+  </div>
+
+  <!--          SECCION KPOP      -->
+  <div class="section-kpop">
+    <div class="text-center container-section">
+      <h2 class="fw-bold fs-2">ÚLTIMOS LANZAMIENTOS DE MÚSICA ASIÁTICA</h2>
+      <h4 class="fs-5">¡Para todos los aficionados de grupos de kpop!</h4>
+    </div>
+    <div class="row">
+      <div class="col-sm-3" *ngFor="let item of kpopProducts">
+        <a [routerLink]="['/details', item.id]" class="product-item">
+          <div class="hover-effect">
+            <div class="img-container"> <!-- Agrega la clase .img-container aquí -->
+              <img class="img" src="{{item.image}}" alt="{{item.name}}">
+            </div>
+            <div class="hover-caption">
+              <h3>{{item.name}}</h3>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
+    </div>
+  </div>
+
+  <!--          SECCION MANGA        -->
+  <div class="section-lectura">
+    <div class="text-center container-section">
+      <h2 class="fw-bold fs-2">RECIÉN LLEGADOS A LA SELECCIÓN DE LECTURA</h2>
+      <h4 class="fs-5">¡Nuevos estrenos para nuestros comelibros favoritos!</h4>
+    </div>
+    <div class="row">
+      <div class="col-sm-3" *ngFor="let item of lecturaProducts">
+        <a [routerLink]="['/details', item.id]" class="product-item">
+          <div class="hover-effect">
+            <div class="img-container"> <!-- Agrega la clase .img-container aquí -->
+              <img class="img" src="{{item.image}}" alt="{{item.name}}">
+            </div>
+            <div class="hover-caption">
+              <h3>{{item.name}}</h3>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
   </div>
 </div>

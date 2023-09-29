@@ -12,6 +12,9 @@ import {UserAuthComponent} from "./components/user-auth/user-auth.component";
 import {CartPageComponent} from "./components/cart-page/cart-page.component";
 import {CheckoutComponent} from "./components/checkout/checkout.component";
 import {MyOrdersComponent} from "./components/my-orders/my-orders.component";
+import {UserDetailProfileComponent} from "./components/user-detail-profile/user-detail-profile.component";
+import {ContactComponent} from "./components/contact/contact.component";
+import {SuccessfulBuyingComponent} from "./components/successful-buying/successful-buying.component";
 
 const routes: Routes = [
   {
@@ -60,6 +63,18 @@ const routes: Routes = [
   {
     path:'my-orders',
     component: MyOrdersComponent,
+  },
+  {
+    path:'user-profile',
+    component: UserDetailProfileComponent,
+  },
+  {
+    path:'contact',
+    component: ContactComponent,
+  },
+  {
+    path:'successful-buying',
+    component: SuccessfulBuyingComponent,
   },
 ];
 

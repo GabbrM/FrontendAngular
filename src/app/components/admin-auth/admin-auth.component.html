@@ -1,5 +1,5 @@
 <div class="admin-auth">
-  <div  *ngIf="!showLogin" class="sign-up">
+  <div *ngIf="!showLogin" class="sign-up">
     <h1>Admin Sign-Up</h1>
     <form #adminSignUp="ngForm" (ngSubmit)="signUp(adminSignUp.value)" class="common-form">
       <input class="form-input" type="text" ngModel name="name" placeholder="Enter name"/>

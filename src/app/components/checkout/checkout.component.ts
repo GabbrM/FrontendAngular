@@ -48,7 +48,7 @@ export class CheckoutComponent {
         if (result){
           this.orderMsg = "Your order has been placed";
           setTimeout(() => {
-            this.router.navigate(['/my-orders']);
+            this.router.navigate(['/successful-buying']);
             this.orderMsg=undefined;
           }, 4000);
 

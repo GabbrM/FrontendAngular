@@ -10,10 +10,12 @@ import {cart, product} from "../../models/data-model";
 })
 export class ProductDetailsComponent {
   productData: undefined | product;
+  cartData: product | undefined;
+
   productQuantity: number = 1;
   quantity: number = 1;
   removeCart=false;
-  cartData: product | undefined;
+
   constructor(private activeRoute: ActivatedRoute, private product: ProductService) {
   }
 
@@ -48,13 +50,20 @@ export class ProductDetailsComponent {
         })
       }
     })
+
   }
 
   handleQuantity(val: string){
-    if (this.productQuantity < 20 && val === 'plus'){
-      this.productQuantity+=1;
-    }else if (this.productQuantity<20 && val === 'min'){
-      this.productQuantity=1;
+    if(val === 'plus') {
+
+      this.productQuantity += 1;
+
+    } else if(val === 'min') {
+
+      if(this.productQuantity > 1) {
+        this.productQuantity -= 1;
+      }
+
     }
   }
 
@@ -81,6 +90,8 @@ export class ProductDetailsComponent {
         })
       }
     }
+
+
   }
   removeToCart(productId: number){
     if (!localStorage.getItem('user')){
@@ -91,10 +102,9 @@ export class ProductDetailsComponent {
       let userId = user && JSON.parse(user).id;
       console.warn(this.cartData);
       this.cartData && this.product.removeToCart(this.cartData.id).subscribe((result) => {
-        if (result){
-          this.product.getCartList(userId);
-          this.product.getCartList(userId);
-        }
+        let user = localStorage.getItem('user');
+        let userId = user && JSON.parse(user).id;
+        this.product.getCartList(userId);
       });
       this.removeCart = false;
     }

@@ -17,31 +17,19 @@ export class MyOrdersComponent {
     this.getOrderList();
   }
 
-  cancelOrder(orderId: number | undefined) {
-    if (orderId) {
-      this.product.cancelOrder(orderId).subscribe(
-        () => {
-          this.getOrderList();
-        },
-        (error) => {
-          console.error('Error cancelling order:', error);
-          // Handle the error here (e.g., show an error message to the user).
-        }
-      );
-    }
-  }
-
-
-  getOrderList() {
-    this.product.orderList().subscribe(
-      (result) => {
-        this.orderData = result;
-      },
-      (error) => {
-        console.error('Error fetching order list:', error);
-        // Handle the error here (e.g., show an error message to the user).
+  cancelOrder(orderId: number | undefined){
+    orderId && this.product.cancelOrder(orderId).subscribe((result)=>{
+      if(result){
+        this.getOrderList();
       }
-    );
+    })
   }
+
+  getOrderList(){
+    this.product.orderList().subscribe((result)=>{
+      this.orderData=result;
+    })
+  }
+
 
 }

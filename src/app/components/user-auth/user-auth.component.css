@@ -1,9 +1,15 @@
+*, h1{
+  font-family: 'Montserrat', sans-serif;
+}
+
 .form-input{
   height: 35px;
   margin-bottom: 20px;
   padding-left: 10px;
-  border: 1px solid blueviolet;
-  color: blueviolet;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #c9c7c7;
+  color: black;
 }
 
 .common-form{
@@ -16,15 +22,18 @@
 
 .form-button{
   height: 35px;
-  border: 1px solid blueviolet;
+  border: 1px solid black;
   cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .user-auth h1{
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   margin-top: 80px;
-  color: blueviolet;
+  color: #AA1D1D;
+  font-weight: bold;
 }
 
 .user-auth{
@@ -32,8 +41,9 @@
 }
 
 .common-form a{
-  color: blueviolet;
+  color: #AA1D1D;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .invalid-input{

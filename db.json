@@ -136,33 +136,299 @@
   ],
   "products": [
     {
-      "name": "tomioka",
-      "price": "110",
-      "color": "azul",
-      "category": "Figuras",
+      "nameCategory": "ONE PUNCH MAN",
+      "name": "Saitama Escala 1/4",
+      "price": "360",
+      "color": "naranja",
+      "category": "Anime",
       "description": "figura coleccionable",
-      "image": "https://www.rightstufanime.com/images/productImages/4534530885555_figure-giyu-tomioka-demon-slayer-kimetsu-no-yaiba-figure-primary.jpg?resizeid=3&resizeh=600&resizew=600",
+      "image": "https://pbs.twimg.com/media/Emgt6gvW8AAt5yg?format=jpg&name=large",
       "id": 1
     },
     {
-      "name": "Luffy - Figure",
+      "nameCategory": "DOROHEDORO",
+      "name": "Nikaido & Cai Escala 1/8",
+      "price": "360",
+      "color": "naranja",
+      "category": "Anime",
+      "description": "Figura coleccionable",
+      "image": "https://www.figureart.store/cdn/shop/products/dorohedoro-caiman-nikaido-elite-figumiz-statue-resin-figures-figurama-collectors-872864.jpg?v=1641576404",
+      "id": 2
+    },
+    {
+      "nameCategory": "EVANGELION",
+      "name": "Rei Ayanami Escala 1/8",
+      "price": "360",
+      "color": "celeste",
+      "category": "Anime",
+      "description": "Figura coleccionable",
+      "image": "https://images.goodsmile.info/cgm/images/product/20220318/12478/96674/large/f30759b629a7e830c51a3eec73c186d8.jpg",
+      "id": 3
+    },
+    {
+      "nameCategory": "BLEACH",
+      "name": "Kurosaki Ichigo Escala 1/8",
+      "price": "370",
+      "color": "black",
+      "category": "Anime",
+      "description": "Coleccionable",
+      "image": "https://yesgk.com/cdn/shop/files/bleach-kurosaki-ichigo-resin-statue-black-wing-studio-pre-order-567.webp?v=1683351686&width=1946",
+      "id": 4
+    },
+    {
+      "nameCategory": "KIMETSU NO YAIBA",
+      "name": "Zenitsu Agatsu Escala 1/4",
+      "price": "360",
+      "color": "amarillo",
+      "category": "Anime",
+      "description": "Coleccionable",
+      "image": "https://tamashiinations.fr/14091-large_default/demon-slayer-figure-zenitsu-agatsuma-thunderclap-and-flash-figuarts-zero.jpg",
+      "id": 5
+    },
+    {
+      "nameCategory": "BATTLE THROUGH THE HEAVENS",
+      "name": "Xiao er",
+      "price": "200",
+      "color": "green",
+      "category": "Anime",
+      "description": "Coleccionable",
+      "image": "https://ueeshop.ly200-cdn.com/u_file/UPAL/UPAL688/2304/products/19/30d102f97c.jpg.500x500.jpg",
+      "id": 6
+    },
+    {
+      "nameCategory": "TOKYO GHOUL",
+      "name": "Kaneki vs Yam Escala 1/8",
+      "price": "380",
+      "color": "red",
+      "category": "Anime",
+      "description": "Coleccionable",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL538bvKtO-gOm-jBBtjZu8dPYILY9TgO_kGhc1T5J9KPdc7YtURZPPRpwJp4tTlnX7-U&usqp=CAU",
+      "id": 7
+    },
+    {
+      "nameCategory": "ONE PIECE",
+      "name": "The Sunny Escala 1/8",
+      "price": "400",
+      "color": "amarillo",
+      "category": "Anime",
+      "description": "Coleccionable",
+      "image": "https://tamashiinations.fr/22215-home_default/one-piece-figure-thousand-sunny-chogokin.jpg",
+      "id": 8
+    },
+    {
+      "nameCategory": "YOUNI-ON",
+      "name": "YOUNITE",
+      "price": "38",
+      "color": "red",
+      "category": "KPOP",
+      "description": "Coleccionable",
+      "image": "https://m.media-amazon.com/images/I/51SeX8u-PbL._UF1000,1000_QL80_.jpg",
+      "id": 9
+    },
+    {
+      "nameCategory": "NewJeans",
+      "name": "NewJeans 1ST",
+      "price": "36",
+      "color": "blue",
+      "category": "KPOP",
+      "description": "Coleccionable",
+      "image": "https://kstoryperu.com/cdn/shop/products/2022-07-25_11.05.26_grande.png?v=1658774227",
+      "id": 10
+    },
+    {
+      "nameCategory": "BTS",
+      "name": "PROOF",
+      "price": "39",
+      "color": "black",
+      "category": "KPOP",
+      "description": "Coleccionable",
+      "image": "https://kstoryperu.com/cdn/shop/products/2022-05-05_8.19.53_1024x1024.png?v=16517363967",
+      "id": 11
+    },
+    {
+      "nameCategory": "BTS",
+      "name": "Butter",
+      "price": "41",
+      "color": "naranja",
+      "category": "KPOP",
+      "description": "Coleccionable",
+      "image": "https://merchdaykpop.tiendada.com/api/scrooge/file/FL-4525B9A4",
+      "id": 12
+    },
+    {
+      "nameCategory": "TAEYONG",
+      "name": "Shalala",
+      "price": "45",
+      "color": "black",
+      "category": "KPOP",
+      "description": "Coleccionable",
+      "image": "https://d3i908zd4kzakt.cloudfront.net/data/item/1684199009/GD00094786.default.2.jpg",
+      "id": 13
+    },
+    {
+      "nameCategory": "Red Velvet",
+      "name": "Queendom",
+      "price": "65",
+      "color": "morado",
+      "category": "KPOP",
+      "description": "Coleccionable",
+      "image": "https://sokollab.co.uk/cdn/shop/products/RedVelvetQueendomQueensversionSOKOLLABUK.jpg?v=1628806328",
+      "id": 14
+    },
+    {
+      "nameCategory": "Red Velvet",
+      "name": "REDMARE",
+      "price": "45",
+      "color": "blue",
+      "category": "KPOP",
+      "description": "Coleccionable",
+      "image": "https://d3tvwjfge35btc.cloudfront.net/Assets/44/171/L_p0104917144.jpeg",
+      "id": 15
+    },
+    {
+      "nameCategory": "LE SSERAFIM",
+      "name": "Fearless",
+      "price": "20",
+      "color": "black",
+      "category": "KPOP",
+      "description": "Coleccionable",
+      "image": "https://momostore.es/med/img/productos/009001015760.jpg",
+      "id": 16
+    },
+    {
+      "nameCategory": "CANNIBAL",
+      "name": "Cannibal Tomo 8",
+      "price": "15.50",
+      "color": "green",
+      "category": "Lectura",
+      "description": "Coleccionable",
+      "image": "https://ramenparados.com/wp-content/uploads/2023/07/gannibal-8-300x424.jpg",
+      "id": 17
+    },
+    {
+      "nameCategory": "JUJUTSU KAISEN",
+      "name": "Jujutsu Kaisen Tomo 21",
+      "price": "15",
+      "color": "black",
+      "category": "Lectura",
+      "description": "Coleccionable",
+      "image": "https://cdnx.jumpseller.com/shazam-online/image/36100866/jujutsu_kaisen_21_panini.jpg?1685986062",
+      "id": 18
+    },
+    {
+      "nameCategory": "KAGUYA SAMA LOVE IS WAR",
+      "name": "Kaguya Sama Tomo 25",
+      "price": "35",
+      "color": "green",
+      "category": "Lectura",
+      "description": "Coleccionable",
+      "image": "https://m.media-amazon.com/images/I/71qsellXhEL._AC_UF894,1000_QL80_.jpg",
+      "id": 19
+    },
+    {
+      "nameCategory": "BLUELOCK",
+      "name": "Bluelock Tomo 5",
+      "price": "15",
+      "color": "black",
+      "category": "Lectura",
+      "description": "Coleccionable",
+      "image": "https://www.planetadelibros.com.pe/usuaris/libros/fotos/371/m_libros/370261_portada_blue-lock-n-05_muneyuki-kaneshiro_202204041148.jpg",
+      "id": 20
+    },
+    {
+      "nameCategory": "ZOM100 BUCKET LIST OF THE DEATH",
+      "name": "ZOM100 Tomo 13",
+      "price": "25",
+      "color": "green",
+      "category": "Lectura",
+      "description": "Coleccionable",
+      "image": "https://www.universal-comics.com/imagenes/poridentidad?identidad=da24ac73-7437-49d4-bf2f-9bf449c5dc1a&ancho=900&alto=",
+      "id": 21
+    },
+    {
+      "nameCategory": "BLACK PARADOX",
+      "name": "Black Paradox: Collector Pack",
+      "price": "115",
+      "color": "black",
+      "category": "Lectura",
+      "description": "Coleccionable",
+      "image": "https://ramenparados.com/wp-content/uploads/2023/04/coleccionable_junji_ito_vol1-300x429.jpg",
+      "id": 22
+    },
+    {
+      "nameCategory": "HAIKYUU HARUICHI FURUDATE",
+      "name": "HAIKYUU Tomo 22",
+      "price": "15",
+      "color": "red",
+      "category": "Lectura",
+      "description": "Coleccionable",
+      "image": "https://m.media-amazon.com/images/I/71yoOX7kjwL._AC_UF1000,1000_QL80_.jpg",
+      "id": 23
+    },
+    {
+      "nameCategory": "3X3 EYES",
+      "name": "3X3 Eyes Tomo 21",
+      "price": "15",
+      "color": "naranja",
+      "category": "Lectura",
+      "description": "Coleccionable",
+      "image": "https://ramenparados.com/wp-content/uploads/2023/07/3x3-eyes-21-300x426.jpg",
+      "id": 24
+    },
+    {
+      "nameCategory": "HAJIME NO IPPO",
+      "name": "Hajime no Ippo Tomo 8",
+      "price": "15",
+      "color": "blue",
+      "category": "Lectura",
+      "description": "Coleccionable",
+      "image": "https://ramenparados.com/wp-content/uploads/2023/03/FqxRJC1WIAUuN8h-1.jpg",
+      "id": 25
+    },
+    {
+      "nameCategory": "JUNJI ITO",
+      "name": "TOMIE Tomo 1",
+      "price": "15",
+      "color": "green",
+      "category": "Lectura",
+      "description": "Coleccionable",
+      "image": "https://images.cdn3.buscalibre.com/fit-in/360x360/7e/86/7e8625e7d6086724088d28cc6042bedd.jpg",
+      "id": 26
+    }
+  ],
+  "kpop-products": [
+    {
+      "nameCategory": "NewJeans",
+      "name": "NewJeans 1st EP (Bluebook ver.)",
+      "price": "70",
+      "color": "azul",
+      "category": "Kpop album",
+      "description": "figura coleccionable",
+      "image": "https://kstoryperu.com/cdn/shop/products/2022-07-25_11.05.26_grande.png?v=1658774227",
+      "id": 1
+    },
+    {
+      "nameCategory": "One punch man",
+      "name": "Saitama - Escala 1/4",
       "price": "150",
       "color": "black",
       "category": "Figuras",
       "description": "Figura coleccionable",
-      "image": "https://tamashiinations.fr/15516-large_default/one-piece-figure-monkeydluffy-imagination-works.jpg",
+      "image": "https://xtremeplay.pe/wp-content/uploads/2023/09/TOYCOLBAN2579.jpg",
       "id": 2
     },
     {
-      "name": "inuyasha - Figure",
+      "nameCategory": "Dorohedoro",
+      "name": "Nikaido & Cai - Escala 1/8",
       "price": "1000",
       "color": "rojo",
       "category": "Figuras",
       "description": "Figura coleccionable",
-      "image": "https://m.media-amazon.com/images/I/51+F1JEmchL._AC_UF894,1000_QL80_.jpg",
+      "image": "https://www.specfictionshop.com/cdn/shop/products/226366804_2833198883659353_2161205630738689684_n_2000x.jpg?v=1641033860",
       "id": 3
     },
     {
+      "nameCategory": "Tales of Demons and Gods",
       "name": "Xiao Er",
       "price": "200",
       "color": "green",
@@ -176,7 +442,7 @@
     {
       "name": "l",
       "surname": "Li",
-      "email": "li@gmail.com",
+      "email": "nuevo@email.com",
       "password": "l",
       "id": 1
     },
@@ -195,29 +461,324 @@
       "id": 3
     },
     {
-      "name": "michelle",
-      "surname": "moreno",
-      "email": "g@gmail.com",
+      "name": "corazon_miaos",
+      "surname": "serioses",
+      "email": "cora@gmail.com",
+      "password": "wawa",
+      "id": 6
+    },
+    {
+      "userdata": {
+        "name": "buenos",
+        "surname": "hola",
+        "cellphone": "987564543",
+        "email": "hola@gmail.com",
+        "password": "123"
+      },
+      "id": 7
+    },
+    {
+      "name": "mugi",
+      "surname": "hola",
+      "email": "mugi@gmail.com",
       "password": "123",
+      "numberCellphone": "123",
+      "payment": "option1",
+      "id": 8
+    },
+    {
+      "name": "Alexandra",
+      "surname": "Morales",
+      "email": "ale@gmail.com",
+      "password": "123",
+      "pay": "tarjeta",
+      "id": 9
+    }
+  ],
+  "cart": [
+    {
+      "nameCategory": "Kimetsu No Yaiba",
+      "name": "Tomioka - Escala 1/4",
+      "price": "110",
+      "color": "azul",
+      "category": "Anime",
+      "description": "figura coleccionable",
+      "image": "https://www.rightstufanime.com/images/productImages/4534530885555_figure-giyu-tomioka-demon-slayer-kimetsu-no-yaiba-figure-primary.jpg?resizeid=3&resizeh=600&resizew=600",
+      "quantity": 1,
+      "userId": 8,
+      "productId": 1,
+      "id": 1
+    },
+    {
+      "nameCategory": "KIMETSU NO YAIBA",
+      "name": "Zenitsu Agatsu Escala 1/4",
+      "price": "360",
+      "color": "amarillo",
+      "category": "Anime",
+      "description": "Coleccionable",
+      "image": "https://tamashiinations.fr/14091-large_default/demon-slayer-figure-zenitsu-agatsuma-thunderclap-and-flash-figuarts-zero.jpg",
+      "quantity": 1,
+      "userId": 9,
+      "productId": 5,
+      "id": 2
+    },
+    {
+      "nameCategory": "BLEACH",
+      "name": "Kurosaki Ichigo Escala 1/8",
+      "price": "370",
+      "color": "black",
+      "category": "Anime",
+      "description": "Coleccionable",
+      "image": "https://yesgk.com/cdn/shop/files/bleach-kurosaki-ichigo-resin-statue-black-wing-studio-pre-order-567.webp?v=1683351686&width=1946",
+      "quantity": 1,
+      "userId": 9,
+      "productId": 4,
+      "id": 3
+    },
+    {
+      "nameCategory": "EVANGELION",
+      "name": "Rei Ayanami Escala 1/8",
+      "price": "360",
+      "color": "celeste",
+      "category": "Anime",
+      "description": "Figura coleccionable",
+      "image": "https://images.goodsmile.info/cgm/images/product/20220318/12478/96674/large/f30759b629a7e830c51a3eec73c186d8.jpg",
+      "quantity": 1,
+      "productId": 3,
+      "userId": null,
+      "id": 4
+    }
+  ],
+  "orders": [
+    {
+      "email": "mi",
+      "address": "mira",
+      "contact": "mi",
+      "totalPrice": 210,
+      "userId": 6,
+      "id": 1
+    },
+    {
+      "email": "i",
+      "address": "i",
+      "contact": "i",
+      "totalPrice": 460,
+      "userId": 9,
+      "id": 2
+    },
+    {
+      "email": "yes yes",
+      "address": "yes",
+      "contact": "yes",
+      "totalPrice": 300,
+      "userId": 9,
+      "id": 3
+    },
+    {
+      "email": "si@gmail.com",
+      "address": "si",
+      "contact": "si",
+      "totalPrice": 215,
+      "userId": 9,
       "id": 4
     },
     {
-      "name": "Gabriel",
-      "surname": "Bernal",
-      "email": "gabrielbernal_12@hotmail.com",
-      "password": "123456",
+      "email": "ja",
+      "address": "jal",
+      "contact": "foo",
+      "totalPrice": 1020,
+      "userId": 9,
       "id": 5
+    },
+    {
+      "email": "ale@gmail.com",
+      "address": "bolivar",
+      "contact": "hola@gmail.com",
+      "totalPrice": 830,
+      "userId": 9,
+      "id": 6
     }
   ],
-  "cart": [],
-  "orders": [
+  "shipping": [
     {
-      "email": "u20201f415@upc.edu.pe",
-      "address": "sfaas",
-      "contact": "nohay",
-      "totalPrice": 300,
-      "userId": 4,
+      "shipping": [
+        {
+          "address": "si",
+          "district": "debe",
+          "province": "si",
+          "paymentMethod": "sis",
+          "linkedCard": "si"
+        }
+      ],
       "id": 1
+    },
+    {
+      "shipping": [
+        {
+          "address": "oviedo",
+          "district": "pueblo libre",
+          "province": "lima",
+          "paymentMethod": "visa",
+          "linkedCard": "2345683456"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "shipping": [
+        {
+          "address": "hola",
+          "district": "hol",
+          "province": "l",
+          "paymentMethod": "l",
+          "linkedCard": "l"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "shipping": [
+        {
+          "address": "buenas",
+          "district": "buenas",
+          "province": "buenas",
+          "paymentMethod": "buenas",
+          "linkedCard": "buenas"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "shipping": [
+        {
+          "address": "yu",
+          "district": "yu",
+          "province": "yu",
+          "paymentMethod": "yu",
+          "linkedCard": "yu"
+        }
+      ],
+      "id": 5
+    },
+    {
+      "shipping": [
+        {
+          "address": "que ",
+          "district": "que",
+          "province": "euq",
+          "paymentMethod": "roiw",
+          "linkedCard": "eiw"
+        }
+      ],
+      "id": 6
+    },
+    {
+      "shipping": [
+        {
+          "address": "gn",
+          "district": "gn",
+          "province": "ge",
+          "paymentMethod": "fe",
+          "linkedCard": "ge"
+        }
+      ],
+      "id": 7
+    },
+    {
+      "shipping": [
+        {
+          "address": "wu",
+          "district": "fuw",
+          "province": "udow",
+          "paymentMethod": "fuiww",
+          "linkedCard": "fwfe"
+        }
+      ],
+      "id": 8
+    },
+    {
+      "shipping": [
+        {
+          "address": "si",
+          "district": "vod",
+          "province": "foqwdoe",
+          "paymentMethod": "novpiwmio",
+          "linkedCard": "fifpwf"
+        }
+      ],
+      "id": 9
+    },
+    {
+      "shipping": [
+        {
+          "address": "espero",
+          "district": "eron",
+          "province": "griopwef",
+          "paymentMethod": "bewio",
+          "linkedCard": "vwe"
+        }
+      ],
+      "id": 10
+    },
+    {
+      "shipping": [
+        {
+          "address": "isabel",
+          "district": "eron",
+          "province": "griopwef",
+          "paymentMethod": "bewio",
+          "linkedCard": "vwe"
+        }
+      ],
+      "id": 11
+    },
+    {
+      "shipping": [
+        {
+          "address": "isabela",
+          "district": "eronaw",
+          "province": "g",
+          "paymentMethod": "bewio",
+          "linkedCard": "vwe"
+        }
+      ],
+      "id": 12
+    },
+    {
+      "shipping": [
+        {
+          "address": "isabela",
+          "district": "eronaw",
+          "province": "g",
+          "paymentMethod": "bewio",
+          "linkedCard": "vwe"
+        }
+      ],
+      "id": 13
+    },
+    {
+      "shipping": [
+        {
+          "address": "isabelaa",
+          "district": "eronaw",
+          "province": "g",
+          "paymentMethod": "bewio",
+          "linkedCard": "vwe"
+        }
+      ],
+      "id": 14
+    },
+    {
+      "shipping": [
+        {
+          "address": "isabelitaa",
+          "district": "eronaw",
+          "province": "g",
+          "paymentMethod": "bewio",
+          "linkedCard": "vwe"
+        }
+      ],
+      "id": 15
     }
   ]
 }

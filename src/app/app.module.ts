@@ -14,7 +14,7 @@ import { AdminAddProductComponent } from './components/admin-add-product/admin-a
 import {MatTableModule} from "@angular/material/table";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AdminUpdateProductComponent } from './components/admin-update-product/admin-update-product.component';
-import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCarouselModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgIf } from '@angular/common';
 import { SearchComponent } from './components/search/search.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
@@ -23,6 +23,11 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CartPageComponent } from './components/cart-page/cart-page.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { MyOrdersComponent } from './components/my-orders/my-orders.component';
+import { UserDetailProfileComponent } from './components/user-detail-profile/user-detail-profile.component';
+import {MatIconModule} from "@angular/material/icon";
+import {MatBadgeModule} from "@angular/material/badge";
+import { ContactComponent } from './components/contact/contact.component';
+import { SuccessfulBuyingComponent } from './components/successful-buying/successful-buying.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +44,10 @@ import { MyOrdersComponent } from './components/my-orders/my-orders.component';
     FooterComponent,
     CartPageComponent,
     CheckoutComponent,
-    MyOrdersComponent
+    MyOrdersComponent,
+    UserDetailProfileComponent,
+    ContactComponent,
+    SuccessfulBuyingComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +58,10 @@ import { MyOrdersComponent } from './components/my-orders/my-orders.component';
     MatButtonModule,
     MatTableModule,
     FontAwesomeModule,
-    NgbCarouselModule
+    NgbCarouselModule,
+    NgbModule,
+    MatIconModule,
+    MatBadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

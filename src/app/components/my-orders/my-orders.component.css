@@ -1,12 +1,31 @@
+h1, h3, input, *{
+  font-family: 'Montserrat', sans-serif;
+}
+
+span{
+  font-weight: bolder;
+  margin-left: 34px;
+}
+
+.non-sytle{
+  font-weight: normal;
+}
+
 .form-button{
-  height: 35px;
-  border: 1px solid blueviolet;
+  border: none;
   cursor: pointer;
+  background-color: #AA1D1D;
+  color: white;
+  height: 50px;
+  border-collapse: collapse;
 }
 
 .my-orders h1{
   margin-top: 50px;
   margin-bottom: 50px;
+  font-size: 25px;
+  text-align: start;
+  font-weight: bolder;
 }
 
 .my-orders .order-img{

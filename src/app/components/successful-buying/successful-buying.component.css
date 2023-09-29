@@ -1,0 +1,34 @@
+p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+.container-check {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.img-check {
+  margin-bottom: 30px;
+}
+
+.img-check img {
+  width: 500px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+.info-check {
+  text-align: center;
+}
+
+.info-check p {
+  margin-bottom: 10px;
+}
+
+.info-check a{
+  text-decoration: none;
+  color: #AA1D1D;
+  font-weight: bold;
+}

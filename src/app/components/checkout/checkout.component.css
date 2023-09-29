@@ -1,3 +1,7 @@
+h1, h3, input, *{
+  font-family: 'Montserrat', sans-serif;
+}
+
 .common-form{
   text-align: center;
   display: flex;
@@ -10,6 +14,8 @@
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
+  font-size: 35px;
+  font-weight: bolder;
 }
 
 .checkout h3{
@@ -19,12 +25,24 @@
 }
 
 .form-button{
-  height: 35px;
-  border: 1px solid blueviolet;
-  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #AA1D1D;
+  height: 40px;
+  color: white;
+  border: 3px solid #AA1D1D;
+  border-radius: 35px;
 }
 
 .p-message{
   color: green;
   text-align: center;
+}
+
+.form-input{
+  height: 35px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border: 1px solid black;
+  color: black;
 }

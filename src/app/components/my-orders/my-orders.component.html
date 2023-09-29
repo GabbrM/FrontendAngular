@@ -20,16 +20,18 @@
 
   <div class="row order-data" *ngFor="let order of orderData">
     <div class="col-sm-2">
-      <img class="order-img" src="https://www.citypng.com/public/uploads/preview/download-hd-shopping-cart-black-logo-icon-png-11640441685ymd041qjws.png?v=2023060403" alt="Icon Order">
+      <img class="order-img"
+           src="https://www.citypng.com/public/uploads/preview/download-hd-shopping-cart-black-logo-icon-png-11640441685ymd041qjws.png?v=2023060403"
+           alt="Icon Order">
     </div>
     <div class="col-sm-2">
       <span>#{{order.id}}</span>
     </div>
     <div class="col-sm-2">
-      <span>{{order.totalPrice}}</span>
+      <span class="non-sytle">{{order.totalPrice | currency: 'S/.'}}</span>
     </div>
     <div class="col-sm-2">
-      <span>In process</span>
+      <span class="non-sytle">In process</span>
     </div>
     <div class="col-sm-2">
       <span><button class="form-button" (click)="cancelOrder(order.id)">Cancel Order</button></span>

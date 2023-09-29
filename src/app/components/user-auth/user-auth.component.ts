@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import {cart, login, product, SignUp} from "../../models/data-model";
 import {UserService} from "../../services/user.service";
 import {ProductService} from "../../services/product.service";
-
 @Component({
   selector: 'app-user-auth',
   templateUrl: './user-auth.component.html',

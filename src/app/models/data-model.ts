@@ -2,16 +2,19 @@ export interface SignUp{
   name: string,
   surname: string,
   email: string,
-  password: string
+  password: string,
+  numberCellphone: string,
+  payment: string,
+  id: number
 }
 
 export interface login{
   email: string,
-  password: string
+  password: string,
 }
 
-
 export interface product{
+  nameCategory: string,
   name: string,
   price: string,
   category: string,
@@ -21,8 +24,8 @@ export interface product{
   id: number,
   quantity: undefined | number,
   productId: undefined | number
-
 }
+
 
 export interface cart{
   name: string,
@@ -52,4 +55,15 @@ export interface order{
   totalPrice: number,
   userId: string,
   id: number | undefined;
+}
+
+
+//Shipping
+export interface shippingAddress {
+  address: string;
+  district: string;
+  province: string;
+  paymentMethod: string;
+  linkedCard: string;
+  id: string;
 }

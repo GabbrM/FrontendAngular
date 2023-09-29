@@ -3,11 +3,16 @@
   <p class="p-message">{{productMessage}}</p>
   <form #addProduct="ngForm" (ngSubmit)="submit(addProduct.value)" class="common-form">
     <input class="form-input" type="text" ngModel="{{productData?.name}}" name="name" placeholder="Enter product name"/>
-    <input class="form-input" type="text" ngModel="{{productData?.price}}" name="price" placeholder="Enter product price"/>
-    <input class="form-input" type="text" ngModel="{{productData?.color}}" name="color" placeholder="Enter product color"/>
-    <input class="form-input" type="text" ngModel="{{productData?.category}}" name="category" placeholder="Enter product category"/>
-    <textarea class="form-input" type="text" ngModel="{{productData?.description}}" name="description" placeholder="Enter product description"></textarea>
-    <input class="form-input" type="text" ngModel="{{productData?.image}}" name="image" placeholder="Enter product Image URL"/>
+    <input class="form-input" type="text" ngModel="{{productData?.price}}" name="price"
+           placeholder="Enter product price"/>
+    <input class="form-input" type="text" ngModel="{{productData?.color}}" name="color"
+           placeholder="Enter product color"/>
+    <input class="form-input" type="text" ngModel="{{productData?.category}}" name="category"
+           placeholder="Enter product category"/>
+    <textarea class="form-input" type="text" ngModel="{{productData?.description}}" name="description"
+              placeholder="Enter product description"></textarea>
+    <input class="form-input" type="text" ngModel="{{productData?.image}}" name="image"
+           placeholder="Enter product Image URL"/>
     <button mat-button class="form-button">Update Product</button>
   </form>
 </div>

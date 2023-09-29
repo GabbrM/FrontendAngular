@@ -1,37 +1,83 @@
-<nav class="nav">
-    <h1><a routerLink="/">Akira</a></h1>
-    <div *ngIf="menuType==='default'" class="nav-search">
-      <input type="text"
-             #searchInput
-             (keyup)="searchProduct($event)" (blur)="hideSearch()" placeholder="Search Products">
-      <button mat-button (click)="submitSearch(searchInput.value)">Search</button>
-      <ul class="suggested-result" *ngIf="searchResult">
-        <li *ngFor="let item of searchResult">
-          <a (mousedown)="redirectToDetails(item.id)">{{item.name}}</a>
+<nav class="nav" style="width: 100%;">
+  <div class="logo">
+    <fa-icon [icon]="icon" class="icon-bar" (click)="toggleCategoryMenu()"></fa-icon>
+    <h1><a routerLink="/"><img src="assets/img/Akira.png" alt="Logo Akira"></a></h1>
+    <div class="category-menu" *ngIf="isCategoryMenuVisible">
+      <ul class="category-list "  [ngClass]="{'slide-in-left': isCategoryMenuVisible}">
+        <fa-icon class="close-button" (click)="closeCategoryMenu()" [icon]="iconClose"></fa-icon>
+        <br>
+        <h2 style="color: black; font-size: 24px; margin-left: 20px; margin-top: 20px; font-weight: bold;">Categorías:</h2>
+
+        <li><a href="#">K-POP</a></li>
+
+        <li><a href="#">ANIME</a></li>
+        <li><a href="#">LECTURA</a></li>
+        <li><a href="#">NEW INGRESOS</a></li>
+        <li><a href="#">LO MÁS TOP</a></li>
+        <li><a href="#">Preguntas Frecuentes</a></li>
+        <li><a routerLink="contact">Contáctanos</a></li>
+      </ul>
+    </div>
+  </div>
+  <div *ngIf="menuType!=='admin'" class="nav-search">
+    <div class="search-container">
+      <input type="text" #searchInput (keyup)="searchProduct($event)" (blur)="hideSearch()"
+             placeholder="Search Products">
+      <span class="icon-container">
+        <fa-icon [icon]="iconSearch" (click)="submitSearch(searchInput.value)" class="icon-search"></fa-icon>
+      </span>
+    </div>
+
+    <ul class="suggested-result" *ngIf="searchResult">
+      <li *ngFor="let item of searchResult">
+        <a (mousedown)="redirectToDetails(item.id)">{{item.name}}</a>
+      </li>
+    </ul>
+  </div>
+
+  <div [ngSwitch]="menuType" class="all-headerText">
+    <ul *ngSwitchCase="'default'">
+<!--      <li><a routerLink="admin-auth">Admin</a></li>-->
+      <div class="all-default">
+        <li><a routerLink="">Home</a></li>
+        <li><a routerLink="/user-auth">Login</a></li>
+        <li class="cart-link">
+          <a mat-button>
+            <fa-icon [icon]="faShoppingCart" class="fa-2x"></fa-icon>
+            <span class="cart-badge" matBadge="{{cartItems}}" matBadgeColor="warn"></span>
+          </a>
         </li>
-      </ul>
-    </div>
-    <div [ngSwitch]="menuType">
-      <ul *ngSwitchCase="'default'">
-        <li><a routerLink="admin-auth">Admin</a></li>
-        <li><a routerLink="">Home</a></li>
-        <li><a routerLink="/user-auth">Login/Sign-up</a></li>
-        <li><a href="">Cart({{cartItems}})</a></li>
-      </ul>
+        <li>
+          <a routerLink="/user-auth">
+            <fa-icon [icon]="iconProfile" class="fa-2x"></fa-icon>
+          </a>
+        </li>
+      </div>
 
-      <ul *ngSwitchCase="'user'">
-        <li><a routerLink="admin-auth">Admin</a></li>
-        <li><a routerLink="">Home</a></li>
-        <li><a routerLink="/user-auth">{{userName | titlecase}}</a></li>
-        <li><a (click)="userLogout()">Logout</a></li>
-        <li><a routerLink="cart-page">Cart({{cartItems}})</a></li>
-      </ul>
+    </ul>
 
-      <ul *ngSwitchCase="'admin'">
-        <li><a routerLink="/admin-home">Product List</a></li>
-        <li><a routerLink="admin-add-product">Add Products</a></li>
-        <li><a (click)="logout()">Logout</a></li>
-        <li><a href="">{{adminName | titlecase}}</a></li>
-      </ul>
-    </div>
+    <ul *ngSwitchCase="'user'" class="user-menu">
+      <!--<li><a routerLink="admin-auth">Admin</a></li>-->
+      <li><a routerLink="">Home</a></li>
+      <!--<li><a routerLink="my-orders">My orders</a></li>-->
+      <li class="cart-link">
+        <a [routerLink]="cartItems > 0 ? 'cart-page' : null" mat-button>
+          <fa-icon [icon]="faShoppingCart" class="fa-2x"></fa-icon>
+          <span class="cart-badge" matBadge="{{cartItems}}" matBadgeColor="warn"></span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/user-profile">
+          <fa-icon [icon]="iconProfile" class="fa-2x"></fa-icon>
+        </a>
+      </li>
+    </ul>
+
+    <ul *ngSwitchCase="'admin'">
+      <li><a routerLink="/admin-home">Product List</a></li>
+      <li><a routerLink="admin-add-product">Add Products</a></li>
+      <li><a (click)="logout()">Logout</a></li>
+      <li><a href="">{{adminName | titlecase}}</a></li>
+    </ul>
+  </div>
 </nav>

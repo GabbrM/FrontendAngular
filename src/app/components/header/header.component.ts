@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
 import {ProductService} from "../../services/product.service";
 import {product} from "../../models/data-model";
+import {faBars, faEdit, faSearch, faUserCircle, faShoppingCart} from "@fortawesome/free-solid-svg-icons";
+import {faClose} from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-header',
@@ -14,6 +16,11 @@ export class HeaderComponent {
   searchResult: undefined | product[];
   userName: string = "";
   cartItems = 0;
+  icon = faBars;
+  iconSearch = faSearch;
+  iconProfile = faUserCircle;
+  faShoppingCart = faShoppingCart;
+  iconClose= faClose;
   constructor(private router: Router, private product: ProductService) {
   }
 
@@ -82,4 +89,24 @@ export class HeaderComponent {
     console.warn(val);
     this.router.navigate([`search/${val}`])
   }
+
+  isCategoryMenuVisible = false;
+
+  toggleCategoryMenu() {
+    this.isCategoryMenuVisible = !this.isCategoryMenuVisible;
+  }
+  closeCategoryMenu() {
+    this.isCategoryMenuVisible = false;
+
+
+  }
+
+  showSubcategories: { [key: string]: boolean } = {};
+
+  toggleSubcategories(category: string) {
+    this.showSubcategories[category] = !this.showSubcategories[category];
+  }
+
+  protected readonly faEdit = faEdit;
+
 }

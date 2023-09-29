@@ -1,37 +1,50 @@
 <div class="user-auth">
-<div *ngIf="!showLogin" class="user-signup">
-  <h1>User Sign-up</h1>
-  <form class="common-form" #userSignUp="ngForm" (ngSubmit)="signUp(userSignUp.value)">
-    <input class="form-input"
-           type="text"
-           placeholder="Enter User Name"
-           name="name"
-           ngModel
-    >
+  <div *ngIf="!showLogin" class="user-signup">
+    <h1>User Sign-up</h1>
+    <form class="common-form" #userSignUp="ngForm" (ngSubmit)="signUp(userSignUp.value)">
+      <input class="form-input"
+             type="text"
+             placeholder="Enter User Name"
+             name="name"
+             ngModel
+      >
 
-    <input class="form-input"
-           type="text"
-           placeholder="Enter User Surname"
-           name="surname"
-           ngModel
-    >
-    <input class="form-input"
-           type="text"
-           placeholder="Enter User Email"
-           name="email"
-           ngModel
-    >
-    <input class="form-input"
-           type="password"
-           placeholder="Enter User Password"
-           name="password"
-           ngModel
+      <input class="form-input"
+             type="text"
+             placeholder="Enter User Surname"
+             name="surname"
+             ngModel
+      >
+      <input class="form-input"
+             type="text"
+             placeholder="Enter User Email"
+             name="email"
+             ngModel
+      >
+      <input class="form-input"
+             type="password"
+             placeholder="Enter User Password"
+             name="password"
+             ngModel
 
-    >
-    <button class="form-button">Sign Up</button>
-    <p>Already have an Account? <a (click)="openLogin()">Click Here</a></p>
-  </form>
-</div>
+      >
+
+      <input class="form-input"
+             type="text"
+             placeholder="Enter User number"
+             name="numberCellphone"
+             ngModel
+      >
+
+      <select class="form-select" name="payment" [(ngModel)]="userSignUp.value.payment">
+        <option value="tarjeta">Tarjeta</option>
+        <option value="billetera_digital">Billetera Digital</option>
+      </select>
+
+      <button class="form-button">Sign Up</button>
+      <p>¿Ya tienes cuenta? <a class="fw-bold" (click)="openLogin()">Iniciar Sesión</a></p>
+    </form>
+  </div>
   <div *ngIf="showLogin" class="user-login">
     <h1>User Login</h1>
     <form class="common-form" #userLogin="ngForm" (ngSubmit)="login(userLogin.value)">
@@ -57,7 +70,7 @@
       >
       <p class="invalid-input"><span *ngIf="password.invalid && password.touched">Please Enter valid value</span></p>
       <button [disabled]="userLogin.invalid" class="form-button">Login</button>
-      <p>Don't have an Account? <a (click)="openSignUp()">Click Here</a></p>
+      <p>¿No tienes una cuenta? <a class="fw-bold" (click)="openSignUp()">Regístrate</a></p>
     </form>
   </div>
 </div>
